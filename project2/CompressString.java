@@ -55,7 +55,6 @@ public class CompressString {
     }
 
     appendLastCharIfNeeded(stringBuilder, repeatedCharCounter, previousChar);
-
     return stringBuilder.toString();
   }
 
@@ -67,6 +66,7 @@ public class CompressString {
     if (src.size() == 0 || src.length() == 1) {
       return src;
     }
+    
     int index = 0;
     int count = 1;
     StringBuilder stringBuilder = new StringBuilder();
