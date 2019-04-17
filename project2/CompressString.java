@@ -32,7 +32,7 @@ public class CompressString {
    * char change, it writes in the StringBuilder the compressed partial result.
    */
   public String compress(String src) {
-    if (src.size() == 0 || src.length() == 1) {
+    if (src.isEmpty() || src.length() == 1) {
         return src;
     }
 
@@ -63,7 +63,7 @@ public class CompressString {
    * First while loop for finding repeat groups, and inner while loop is for finding same characters
    */
   public String compressAlternativeApproach(String src) {
-    if (src.size() == 0 || src.length() == 1) {
+    if (src.isEmpty() || src.length() == 1) {
       return src;
     }
     
